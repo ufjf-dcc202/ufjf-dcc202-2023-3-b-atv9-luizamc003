@@ -27,6 +27,26 @@
         deJoaoParaMaria();
         deMariaParaJoao();
 
+        let oJoao = {
+            tipo: "maçã",
+            qtd: 1,
+            comeu:function(){
+                oJoao.qtd--;
+            }
+        }
+
+        let oMaria = {
+            tipo: "maçã",
+            qtd: 2,
+            comeu:function(){
+                oMaria.qtd--;
+            }
+        }
+
+        console.log("Maçãs de Maria: ", oMaria.qtd);
+        oMaria.comeu();
+        console.log("Agora Maria tem: ", oMaria.qtd);
+
     </script>
     
 </body>
